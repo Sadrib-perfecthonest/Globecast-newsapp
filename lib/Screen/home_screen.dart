@@ -51,7 +51,9 @@ class _Homescreenstate extends State<Homescreen> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Categoryscreen()),
+                MaterialPageRoute(
+                  builder: (context) => Categoryscreen(selectedSource: ''),
+                ),
               );
             },
           ),
