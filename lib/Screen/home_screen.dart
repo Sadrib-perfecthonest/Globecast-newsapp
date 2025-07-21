@@ -199,7 +199,11 @@ class _Homescreenstate extends State<Homescreen> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => SettingsScreen()),
+                  MaterialPageRoute(
+                    builder: (context) => SettingsScreen(
+                      updateThemeMode: (ThemeMode themeMode) {},
+                    ),
+                  ),
                 );
               },
             ),
