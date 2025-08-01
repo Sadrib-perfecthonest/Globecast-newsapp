@@ -7,7 +7,8 @@ class NewsRepository {
   Future<NewsChannelHeadlinesModel> fetchNewschannelHeadlinesApi(
     String source,
   ) async {
-    String url = '';
+    String url =
+        'https://newsapi.org/v2/top-headlines?sources=$source&apiKey=cb72762cd0864584893d604b79062546';
 
     final response = await http.get(Uri.parse(url));
 
